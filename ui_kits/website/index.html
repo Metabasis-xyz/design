@@ -1,0 +1,16 @@
+<!-- @dsCard group="Website" viewport="1440x900" name="Marketing site" subtitle="Light institutional marketing site — hero, stats, pillars, compliance, footer" -->
+<!-- @startingPoint section="Screens" subtitle="Light marketing homepage" viewport="1440x900" -->
+<!DOCTYPE html><html><head>
+<meta charset="utf-8"><title>METABASIS — Institutional CFD exchange</title>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../ds_loader.js"></script>
+<style>body{margin:0;background:var(--surface-page)}a{color:var(--text-link)}a:hover{color:var(--accent-hover)}</style>
+</head><body><div id="root"></div>
+<script>
+dsBoot("../../_ds_bundle.js", "HomePage", ["./HomePage.jsx"]).then(function (NS) {
+  ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(NS.HomePage));
+});
+</script></body></html>
